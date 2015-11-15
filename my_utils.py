@@ -3,6 +3,17 @@
 import os
 import re
 
+# todo: movie string class
+# takes a filename and 
+# finds the title, year, release
+# exposes these attributes
+# methods: search_string() = title + year
+
+# todo: imdb result post processing class
+# 1. get the results for a search string
+# 2. store the results for a search string locally
+# 3. retrieve the best match for the search_str in the db
+
 def can_skip_file(dir_name, f_name):
 	file_path = dir_name + '/' + f_name
 	if(not(os.path.exists(file_path))):
